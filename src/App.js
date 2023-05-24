@@ -71,12 +71,11 @@ function App() {
       <BrowserRouter>
         <Menu />
         <Routes>
-          <Route path='/' element={<AllTasks showTask={showTask} />} />
+          <Route path='*' element={<AllTasks showTask={showTask} />} />
           <Route path='/add' element={<AddNewTask setFlag={setFlag} flag={flag} tasks={tasks}/>} />
           <Route path='/delete' element={<Delete setFlag={setFlag} flag={flag} tasks={tasks} />} />
           <Route path='/mytasks' element={<MyTasks setFlag={setFlag} flag={flag} tasks={tasks}  
           addToArr={addToArr} setMyTasksArr={setMyTasksArr} myTasksArr={myTasksArr} showTasks={showTasks} setShowInfo={setShowInfo} showInfo={showInfo} myDesc={myDesc}/>} />
-        <Route path='*' element={<NotFound/>}/>
         </Routes>
       </BrowserRouter>
     </div>

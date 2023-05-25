@@ -37,8 +37,6 @@ body {
 .navBarBtn:hover {
   background-color: #4974eb;
   color: aliceblue;
-  /* background-color: #eb4971;
-  color: aliceblue; */
   border: 4px white solid;
 }
 
@@ -63,7 +61,6 @@ body {
   margin-left: auto;
   margin-right: auto;
   margin-top: 50px;
-  /* background-color: #eb4971; */
   background-color: #4974eb;
   color: aliceblue;
   font-weight: 750;
@@ -269,17 +266,53 @@ textarea {
   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
+#h2AddNewTaskDiv{
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.None{
+  border: none;
+  margin-top: -40px;
+  display: none
+}
+
+@media(max-width: 1300px) {
+  #menu {
+    border: none;
+  }
+  #homePageTasks2{
+    width: 650px;
+  }
+  #workertData {
+    width: 200px;
+    max-height: auto;
+    background-color: #13b8d1;
+  }
+  .navBarBtn {
+    border: 2px black solid;
+    width: 68px;
+    height: 40px;
+    margin: 0;
+    margin-top: 15px;
+    font-size: 12px;
+    margin-right: 11px;
+  }
+  .navBarBtn:hover{
+    height: 50px;
+  }
+}
 
 @media (max-width: 768px) {
   body {
     text-align: center;
   }
 
-  #menu {
+  /* #menu {
     border: none;
     margin-top: -40px;
     display: none
-  }
+  } */
 
   #hamburger {
     display: flex;
@@ -307,13 +340,6 @@ textarea {
     background-color: #13b8d1;
   }
 
-  #h2AddNewTask {
-    position: absolute;
-    top: 55px;
-    left: 20px;
-    font-size: 23px;
-  }
-
   .navBarBtn {
     border: 2px black solid;
     width: 80px;
@@ -325,7 +351,7 @@ textarea {
   }
 
   #addNewTaskDiv {
-    margin-top: 150px;
+    margin-top: 50px;
     width: 330px;
   }
 
@@ -336,6 +362,7 @@ textarea {
 
   #h2DeletePge {
     margin-top: 80px;
+    font-size: 20px;
   }
 
   /* my tasks page */

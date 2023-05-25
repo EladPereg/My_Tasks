@@ -39,7 +39,9 @@ export default function AddNewTask(props) {
     }
     return (
         <div>
+            <div id='h2AddNewTaskDiv'>
             <h2 id='h2AddNewTask'>here you can add your new task </h2>
+            </div>
         <div id='addNewTaskDiv'>
         <form onSubmit={sentData}>
             <input className="addInps" onChange={(e) => { setName(e.target.value) }} type="text" placeholder='name' /> <br />

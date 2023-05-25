@@ -2,14 +2,15 @@ import React, { useState } from 'react'
 import { Link } from 'react-router-dom'
 
 export default function Menu() {
-  const [flag, setFlag] = useState(false)
+  const [flag, setFlag] = useState(true)
   let menu = document.getElementById('menu')
   if (flag == true) {
-    menu.style.display = 'block'
+    menu.classList.remove('None')
   }
   else {
-    menu.style.display = 'none'
+    menu.classList.add('None')
   }
+
   return (
     <div>
       <div id='menu'>

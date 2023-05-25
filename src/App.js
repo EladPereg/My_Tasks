@@ -6,6 +6,7 @@ import AllTasks from './components/AllTasks';
 import AddNewTask from './components/AddNewTask';
 import Delete from './components/Delete';
 import MyTasks from './components/MyTasks';
+import NavBar from './components/NavBar';
 
 function App() {
   const [tasks, setTasks] = useState([]);
@@ -68,7 +69,10 @@ function App() {
   return (
     <div className="App">
       <BrowserRouter>
+      <div id='showMenu'>
         <Menu />
+      </div>
+        <NavBar/>
         <Routes>
           <Route path='*' element={<AllTasks showTask={showTask} />} />
           <Route path='/add' element={<AddNewTask setFlag={setFlag} flag={flag} tasks={tasks}/>} />

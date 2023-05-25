@@ -6,7 +6,6 @@ import AllTasks from './components/AllTasks';
 import AddNewTask from './components/AddNewTask';
 import Delete from './components/Delete';
 import MyTasks from './components/MyTasks';
-import NotFound from './components/NotFound';
 
 function App() {
   const [tasks, setTasks] = useState([]);
